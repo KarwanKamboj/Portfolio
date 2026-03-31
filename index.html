@@ -1,24 +1,652 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Karwan Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
-    <h1>Hello, I'm Karwan</h1>
-    <p>Computer Science Student</p>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>DSA</li>
-        <li>Python</li>
-        <li>AI</li>
-    </ul>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <h2><span>Karwan</span> Kamboj</h2>
+    </div>
 
-    <h2>Projects</h2>
-    <p>AI Provider Data Validation Project</p>
+    <nav>
+      <ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#education">Education</a></li> <!-- ✅ NEW -->
+          <li><a href="images/cv.pdf" download>Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-btn">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+    <a href="#contact" class="hire-btn">Hire Me</a>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+
+      <h2>Hello, I'm</h2>
+      <h1>Karwan Kamboj</h1>
+
+      <h2 class="title"><span id="typing"></span></h2>
+
+      <p>
+        Passionate about Machine Learning, AI, and Data Science.
+        I craft innovative solutions using advanced algorithms
+        and build modern interactive web experiences.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn-primary">View My Work</a>
+
+        <a href="images/cv.pdf" download class="btn-outline">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/KarwanKamboj"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/karwankamboj/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:karwankamboj@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/profile.jpg" alt="profile">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+
+    <div class="about-container">
+
+      <!-- LEFT SIDE -->
+      <div class="about-left">
+        <h1>About Me</h1>
+
+        <p>
+          I'm a <span class="highlight">B.Tech 3rd Year student at Lovely Professional University</span>
+          with a strong interest in <strong>Data Science and Machine Learning</strong>.
+        </p>
+
+        <p>
+          I enjoy working with data, building intelligent models, and solving real-world problems
+          using Python and modern technologies. My focus is on writing
+          <span class="highlight">clean, scalable, and efficient code</span>.
+        </p>
+
+        <p>
+          With a strong <span class="highlight">growth mindset</span>, I continuously explore new tools
+          in AI, analytics, and system design while improving my problem-solving skills.
+        </p>
+
+        <!-- STATS -->
+        <div class="about-stats">
+          <div>
+            <h2>3+</h2>
+            <p>Projects</p>
+          </div>
+
+          <div>
+            <h2>8+</h2>
+            <p>Technologies</p>
+          </div>
+
+          <div>
+            <h2>85%</h2>
+            <p>Growth</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="about-right">
+
+        <div class="about-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Clean Code</h3>
+          <p>Writing maintainable and scalable code following best practices.</p>
+        </div>
+
+        <div class="about-card">
+          <i class="fa-solid fa-brain"></i>
+          <h3>Problem Solver</h3>
+          <p>Solving complex challenges using logic, algorithms, and data.</p>
+        </div>
+
+        <div class="about-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>Data Science</h3>
+          <p>Analyzing data and building machine learning models.</p>
+        </div>
+
+        <div class="about-card">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Growth Mindset</h3>
+          <p>Continuously learning new technologies and improving skills.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- HOME SKILLS -->
+  <section id="skills" class="skills-home">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-box"><i class="fa-brands fa-java"></i><span>Java</span></div>
+      <div class="skill-box"><i class="fa-brands fa-python"></i><span>Python</span></div>
+      <div class="skill-box"><i class="fa-solid fa-brain"></i><span>Machine Learning</span></div>
+      <div class="skill-box"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+      <div class="skill-box"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+      <div class="skill-box"><i class="fa-solid fa-chart-line"></i><span>Power BI</span></div>
+      <div class="skill-box"><i class="fa-solid fa-file-excel"></i><span>Excel</span></div>
+      <div class="skill-box"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+      <div class="skill-box"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+      <div class="skill-box"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+      <div class="skill-box"><i class="fa-solid fa-vial"></i><span>Selenium</span></div>
+      <div class="skill-box"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+      <div class="skill-box"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+
+    </div>
+  </section>
+  <!--Projects-->
+  <section id="projects" class="projects-section">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+      <!-- IMAGE -->
+      <div class="project-image">
+        <img src="images/rbidashboard.jpg" alt="RBI Dashboard">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="project-content">
+
+        <h3>RBI Digital Payments Dashboard</h3>
+        <span class="project-date">📅 Dec 2025</span>
+        <p>
+          An interactive Power BI dashboard analyzing India's digital payment trends from 2020 to 2024, providing
+          insights into transaction growth, volume, and user adoption.
+        </p>
+
+        <!-- TECH STACK -->
+        <div class="project-tags">
+          <span>Power BI</span>
+          <span>Data Analysis</span>
+          <span>Excel</span>
+          <span>Data Visualization</span>
+        </div>
+
+        <!-- EXTRA POINTS -->
+        <p style="margin-bottom: 15px; font-size: 14px; color:#94a3b8;">
+          ✔ Year-wise digital payment growth analysis <br>
+          ✔ UPI vs other payment modes comparison <br>
+          ✔ Interactive filters & slicers for insights <br>
+          ✔ KPI metrics for transaction volume & value <br>
+          ✔ Trend analysis (2020–2024) <br>
+          ✔ User-friendly and dynamic dashboard design
+        </p>
+
+        <!-- BUTTON -->
+        <div class="project-buttons">
+          <a href="https://github.com/KarwanKamboj/RBI-dashboard" target="_blank" class="btn-primary">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <!-- IMAGE -->
+      <div class="project-image">
+        <img src="images/upipredictor.jpg" alt="UPI Prediction">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="project-content">
+
+        <h3>UPI Transaction Value Prediction</h3>
+        <span class="project-date">📅 Dec 2025</span>
+        <p>
+          Machine Learning model using Multiple Linear Regression to predict UPI transaction values based on historical
+          RBI digital payments data.
+        </p>
+
+        <!-- TECH STACK -->
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+        </div>
+
+        <!-- EXTRA POINTS -->
+        <p style="margin-bottom: 15px; font-size: 14px; color:#94a3b8;">
+          ✔ Data cleaning & preprocessing <br>
+          ✔ Feature selection & correlation analysis <br>
+          ✔ Multiple Linear Regression model <br>
+          ✔ Model accuracy evaluation <br>
+          ✔ Visualization of transaction trends <br>
+          ✔ Insights from RBI digital payment data
+        </p>
+
+        <!-- BUTTON -->
+        <div class="project-buttons">
+          <a href="https://github.com/KarwanKamboj/UPI-Transaction-Value-Prediction" target="_blank"
+            class="btn-primary">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Project3 -->
+    <div class="project-card">
+
+      <!-- IMAGE -->
+      <div class="project-image">
+        <img src="images/globaltrade.jpg" alt="EDA World Trade">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="project-content">
+
+        <h3>EDA on World Export-Import Trends</h3>
+        <span class="project-date">📅 May 2025</span>
+        <p>
+          An Exploratory Data Analysis project uncovering global trade patterns across countries.
+          This analysis highlights top exporters/importers, trade balances, and economic trends
+          using powerful visualizations and statistical insights.
+        </p>
+
+        <!-- TECH STACK -->
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+        </div>
+
+        <!-- EXTRA POINTS -->
+        <p style="margin-bottom: 15px; font-size: 14px; color:#94a3b8;">
+          ✔ Top exporters & importers analysis <br>
+          ✔ Trade surplus & deficit insights <br>
+          ✔ Regional trade patterns <br>
+          ✔ Export-import correlation <br>
+          ✔ Emerging economies trends
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="project-buttons">
+
+          <a href="https://github.com/KarwanKamboj/Python_Project" target="_blank" class="btn-primary">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- TRAINING -->
+  <section class="training-section" id="training">
+
+    <div class="training-header-center">
+      <h2 class="training-main-title">
+        Summer Training 🎓
+      </h2>
+
+      <p class="training-subtitle">
+        Industry-focused practical training.
+      </p>
+    </div>
+
+    <!-- ✅ ADD THIS WRAPPER -->
+    <div class="training-card">
+
+      <!-- HEADER -->
+      <div class="training-top">
+        <div>
+          <h2 class="training-title">
+            Java Bootcamp (LeetCode–Codeforces Edition)
+          </h2>
+          <p class="training-org">LPU</p>
+        </div>
+
+        <div class="training-badge">
+          June 2025 – July 2025
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="training-buttons">
+        <a href="images/JavaBootcamp.jpg" target="_blank" class="btn-orange">
+          View Certificate
+        </a>
+
+        <span class="duration">⏱ 1 Month Duration</span>
+      </div>
+
+      <!-- CONTENT -->
+      <ul class="training-list">
+        <li>Completed structured training in core DSA concepts including arrays, linked lists, stacks, queues, trees and
+          graphs.</li>
+
+        <li>Developed strong problem-solving skills using searching, sorting, recursion, backtracking and optimized
+          techniques like two-pointer and sliding window.</li>
+
+        <li>Built a Maze Solver project using backtracking to explore paths and determine a valid route from start to
+          end.</li>
+
+        <li>Enhanced the project with a clean Java-based visualization to clearly show the explored and final path.</li>
+      </ul>
+
+    </div> <!-- ✅ CLOSE CARD -->
+
+  </section>
+  <!--Certificates-->
+
+  <section id="certificates" class="cert-section">
+    <h2 class="section-title">Certificates</h2>
+    <p class="section-subtitle">
+      Verified certificates from NPTEL, IITs, IBM and more.
+    </p>
+
+    <div class="cert-grid">
+      <!-- Card 1 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/chatgptInfosys.jpg')">
+          <img src="images/chatgptInfosys.jpg" alt="Prompt Engineering Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>Prompt Engineering</h3>
+          <p>Infosys</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Aug 2025</span>
+            <a href="images/chatgptInfosys.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/GenAI.jpg')">
+          <img src="images/GenAI.jpg" alt="GenAI Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>Generative AI</h3>
+          <p>Infosys</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Aug 2025</span>
+            <a href="images/GenAI.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/cloudcomputing.jpg')">
+          <img src="images/cloudcomputing.jpg" alt="Cloud Computing Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>Cloud Computing</h3>
+          <p>IIT Kharagpur - NPTEL Elite</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Apr 2025</span>
+            <a href="images/cloudcomputing.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/dataanalysis.jpg')">
+          <img src="images/dataanalysis.jpg" alt="Data Analysis Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>Data Analysis</h3>
+          <p>Coursera</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Mar 2025</span>
+            <a href="images/dataanalysis.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/foundationallevel.jpg')">
+          <img src="images/foundationallevel.jpg" alt="Programming Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>Programming</h3>
+          <p>IIT Madras</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Dec 2024</span>
+            <a href="images/foundationallevel.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="cert-card">
+        <div class="cert-image" onclick="openModal('images/Dsa.jpg')">
+          <img src="images/Dsa.jpg" alt="DSA Certificate">
+        </div>
+
+        <div class="cert-content">
+          <h3>DSA</h3>
+          <p>Board Infinity</p>
+
+          <div class="cert-footer">
+            <span class="cert-date">📅 Mar 2024</span>
+            <a href="images/Dsa.jpg" target="_blank" class="view-icon-btn">
+              👁
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- Education -->
+  <section class="education-section" id="education">
+    <h2 class="section-title">Education</h2> <!-- LPU -->
+    <div class="edu-card">
+      <div class="edu-logo">
+        <div class="logo-circle"> <img src="images/lpulogo.jpg" alt="University Logo"> </div>
+      </div>
+      <div class="edu-content">
+        <h3>Lovely Professional University</h3>
+        <h2>B.Tech in Computer Science and Engineering</h2>
+        <p>Since Aug 2023</p>
+        <p>Phagwara, Punjab</p>
+      </div>
+    </div> <!-- Intermediate (12th) -->
+    <div class="edu-card">
+      <div class="edu-logo">
+        <div class="logo-circle"> <img src="images/davlogo.jpg" alt="DAV School Logo"> </div>
+      </div>
+      <div class="edu-content">
+        <h3>DAV Public School</h3>
+        <h2>Intermediate with PCM</h2>
+        <p><span>Percentage:</span> 86.8%</p>
+        <p>March 2022</p>
+        <p>Mandi Dabwali, Haryana</p>
+      </div>
+    </div> <!-- Matriculation (10th) -->
+    <div class="edu-card">
+      <div class="edu-logo">
+        <div class="logo-circle"> <img src="images/davlogo.jpg" alt="DAV School Logo"> </div>
+      </div>
+      <div class="edu-content">
+        <h3>DAV Public School</h3>
+        <h2>Matriculation</h2>
+        <p><span>Percentage:</span> 88.6%</p>
+        <p>March 2020</p>
+        <p>Mandi Dabwali, Haryana</p>
+      </div>
+    </div>
+
+
+    <!-- lets's connnect-->
+    <section id="contact">
+
+
+      <section class="contact-header">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+          I'm always interested in hearing about new projects and opportunities.
+        </p>
+
+      </section>
+      <!-- SKILLS DETAIL -->
+
+
+      <div class="contact-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+
+          <!-- EMAIL -->
+          <a href="mailto:karwankamboj@email.com" class="contact-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>karwankamboj@email.com</p>
+            </div>
+          </a>
+
+          <!-- LINKEDIN -->
+          <a href="https://www.linkedin.com/in/karwankamboj/" target="_blank" class="contact-box">
+            <div class="icon-box">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/karwankamboj</p>
+            </div>
+          </a>
+
+          <!-- GITHUB -->
+          <a href="https://github.com/KarwanKamboj" target="_blank" class="contact-box">
+            <div class="icon-box">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/KarwanKamboj</p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+
+          <h2>Send a Message</h2>
+          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+          <form class="contact-form">
+
+            <div class="row">
+              <div class="input-box">
+                <label>NAME</label>
+                <input type="text" placeholder="Your name">
+              </div>
+
+              <div class="input-box">
+                <label>EMAIL</label>
+                <input type="email" placeholder="your@email.com">
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label>SUBJECT</label>
+              <input type="text" placeholder="What's this about?">
+            </div>
+
+            <div class="input-box">
+              <label>MESSAGE</label>
+              <textarea rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+
+            <button class="send-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+      <footer class="footer">
+        <p>© 2026 Karwan Kamboj. All rights reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
 
 </body>
 
